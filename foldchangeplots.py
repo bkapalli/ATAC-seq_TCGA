@@ -7,9 +7,9 @@ fold_change_dir = '/Volumes/bkapalli/atac_final_figures/BRCA/fold_change'
 output_dir = 'ind_plots_fold_change'
 os.makedirs(output_dir, exist_ok=True)
 
-#
+# add mutation gene file name + region with desired mutation shaded region and hotspot
+# example: 'signal_matrix_gene.csv', ('chr', , , "chr:-")
 mutation_files = [
-    ('GATA3_fold_change.csv', ('chr10', 8049693, 8080198, "chr10:8051579-8058304"))
 ]
 
 dpi_value = 600
