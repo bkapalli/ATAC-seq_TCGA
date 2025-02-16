@@ -4,3 +4,4 @@ Integrative ATAC-seq analysis of TCGA data (https://gdc.cancer.gov/about-data/pu
 
 Download the bigwig files using tar -zxvf file_name.tgz --strip-components 8
 
+Convert bigwig files to wig files conda install bioconda::ucsc-bigwigtowig
