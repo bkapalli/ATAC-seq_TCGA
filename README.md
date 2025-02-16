@@ -11,14 +11,17 @@ Variant coordinates, originally mapped to Hg19, were converted to Hg38 using the
 
 For breast cancer, a total of 80 samples were analysed, including 18 basal subtype samples and 60 non-basal subtype samples as defined by PAM50 (prediction analysis of microarray 50) classification from the TCGA breast cancer study (2). 
 
-RNA-seq expression data for 10 matched basal subtype samples and 40 matched non-basal subtype samples was obtained from the International Cancer Genome Consortium (ICGC) to further compare the expression between samples with high and low ATAC-seq signal. 
+RNA-seq expression data for 10 matched basal subtype samples and 40 matched non-basal subtype samples was obtained from the International Cancer Genome Consortium (ICGC) (PCAWG was used to decrypt the barcodes) to further compare the expression between samples with high and low ATAC-seq signal
 
 For lung cancers, the two cohorts annotated in TCGA were used as subtypes: LUAD (Lung adenocarcinoma, 19 samples) and LUSC (Lung squamous cell carcinoma, 11 samples). Prostate cancer and bladder cancer analyses included 52 and 20 samples, respectively.
 
 # Genome-wide regulatory differences for ATAC-seq signal 
 
-Calculate 
+Mean.py calculate the mean and map the atac data to ncbi gene list (https://www.ncbi.nlm.nih.gov/refseq/)
 
+Process the genomic signal data (origin variant data) accorindg to the atac-seq base pairs such that their is a score for all 100 bp. the data should be processed by the genomic region subtype i.e. CX,CR,CS,F5,U5,I5,IX,U3,F3,R,J. two files one for the mutation data and one for coverage should be generated. 
+
+Merge.py merge the genomic signal data and atac data 
 
 
 
